@@ -24,10 +24,19 @@
         UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController: rootVC];
         self.window.rootViewController = homeNav;
         [self.window makeKeyAndVisible];
-        
+        [self log1to999999999add];
+                
         [QiCallTrace stop];
         [QiCallTrace save];
     }
+}
+
+- (void)log1to999999999add {
+    NSInteger res = 0;
+    for (NSInteger i = 0; i < 999999999; i ++) {
+        res += i;
+    }
+    NSLog(@"%ld", res);
 }
 
 

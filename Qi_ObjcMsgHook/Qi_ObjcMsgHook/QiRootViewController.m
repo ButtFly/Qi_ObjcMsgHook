@@ -7,6 +7,7 @@
 //
 
 #import "QiRootViewController.h"
+#import "QiLagMonitor/QiCallTrace.h"
 
 @interface QiRootViewController ()
 
